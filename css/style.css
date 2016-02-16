@@ -45,10 +45,6 @@ div.navigation {
             padding-left: 10px;
             cursor: pointer;
         }
-        .sidebar-menu li:hover{
-            color: #507DAB;
-            text-decoration: underline;
-        }
         .sidebar-menu li:first-child, .sidebar-menu li:last-child {
             margin-top: 10px;
         }
@@ -97,6 +93,7 @@ div.container {
         ul.menu {
             list-style-image: url(../img/marker-arr-right.png);
             color: #507DAB;
+            cursor: pointer;
         }
             .menu li {
                 float: left;
