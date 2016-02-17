@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div.wrap-top-menu{
+    width: 100%;
+    height: 35px;
+    border-bottom: 2px solid black;
+}
+    ul.top-menu {
+        list-style-type: none;
+        padding-top: 8px;
+    }
+        .top-menu li{
+            border-right: 1px solid black;
+            padding: 0 10px;
+            float: left;
+            font-weight: bold;
+        }
+        .top-menu li:last-child{
+            border: none;
+        }
+        .top-menu li a{
+            color: #507DAB;
+        }
+        .top-menu li a:hover{
+            color: rgba(60, 76, 163, 0.70);
+            text-shadow: 0 0 1px rgba(19, 8, 86, 0.70);
+        }
+
+div.navigation {
+    position: fixed;
+    top: 35px; left: 0; bottom: 0;
+    width: 300px;
+    overflow-x: auto;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    border-right: 1px solid black;
+}
+    ul.sidebar-menu{
+
+    }
+        .sidebar-menu li {
+            margin-left: 40px;
+            padding-left: 10px;
+            cursor: pointer;
+        }
+        .sidebar-menu li:hover{
+            color: #507DAB;
+            text-decoration: underline;
+        }
+        .sidebar-menu li:first-child, .sidebar-menu li:last-child {
+            margin-top: 10px;
+        }
+        .sidebar-menu li.dir {
+            list-style-image: url(../img/marker-dir.png);
+        }
+        .sidebar-menu li.open-dir {
+            list-style-image: url(../img/marker-open-dir.png);
+        }
+        .sidebar-menu li.plus {
+            list-style-image: url(../img/marker-plus.png);
+        }
+        .sidebar-menu li.minus {
+            list-style-image: url(../img/marker-minus.png);
+        }
+        .sidebar-menu li.checked {
+            list-style-image: url(../img/marker-checkbox-checked.png);
+        }
+        .sidebar-menu li.unchecked {
+            list-style-image: url(../img/marker-checkbox.png);
+        }
+        .sidebar-menu li.play-r {
+            list-style-image: url(../img/marker-play-right.png);
+        }
+        .sidebar-menu li.play-d {
+            list-style-image: url(../img/marker-play-down.png);
+        }
+        .sidebar-menu li.sheet {
+            list-style-image: url(../img/marker-sheet.png);
+        }
+
+
+div.container {
+    bottom: 0;
+    left: 300px;
+    overflow: hidden;
+    position: fixed;
+    top: 36px;
+    width: 100%;
+}
+    div.wrap-menu{
+        height: 35px;
+        border-bottom: 1px solid;
+        width: 100%;
+    }
+        ul.menu {
+            list-style-image: url(../img/marker-arr-right.png);
+            color: #507DAB;
+        }
+            .menu li {
+                float: left;
+                margin: 6px 13px;
+            }
+
+            .menu li:first-child {
+                list-style-type: none;
+                list-style-image: none;
+            }
+
+    div.items{
+        bottom: 0;
+        left: 300px;
+        overflow: auto;
+        position: fixed;
+        top: 70px;
+        padding: 0 125px;
+    }
+    .item{
+        float: left;
+    }
+
+    span.description {
+        display: block;
+        text-align: center;
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .item img {
+        display: block;
+        height: 250px;
+        margin: 10px 10px 0;
+        width: 250px;
+    }
